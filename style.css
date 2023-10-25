@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: block;
+}
+
+.container {
+    height: 100%;
+    padding: 25px 40px;
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-btns ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-btns li {
+    color:#1E2025;
+    font-weight: 400;
+    font-size: 27px;
+}
+
+.main {
+    /* height: calc(100vh - 50px); */
+    height: 100%;
+    background: #F4F6EE;
+    padding-bottom: 50px;
+}
+
+.main-inner {
+    height: 100%;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    max-width: 730px;
+}
+
+.main-title .title {
+    color:#1E2025;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.main-title .subtitle {
+    color: #898B8A;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.main-subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-subtitle .text{
+    display: flex;
+    flex-direction: column;
+    max-width: 630px;
+    gap: 25px;
+}
+
+.main-subtitle .title{
+    color: #898B8A;
+    font-weight: 400;
+    font-size: 38px;
+}
+
+.main-subtitle .subtitle{
+    color:#1E2025;
+    font-weight: 400;
+    font-size: 38px;
+}
+
+.main-subtitle a {
+    color:#1E2025;
+    font-weight: 400;
+    font-size: 28px;
+    margin-right: 20px;
+}
+
+.main-subtitle .action{
+    cursor: pointer;
+    border: 2px solid;
+    padding: 20px 30px;
+    border-radius: 45px;
+}
+
+/* info */
+
+.info {
+    background: #1E2025;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 100%;
+}
+
+.info-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.info .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info .text .text-inner {
+    display: flex;
+    flex-direction: column;
+    max-width: 730px;
+}
+
+.info .text .main-title {
+    color: #F4F7EE;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.info .text .title {
+    color: #86878A;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.info .text .subtitle {
+    color: #F4F7EE;
+    font-weight: 400;
+    font-size: 30px;
+    max-width: 600px;
+}
+
+.line {
+    color: #86878A;
+    width: 100%;
+    size: 2;
+    margin: 80px 0;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    gap: 15px;
+}
+
+.item .title {
+    color: #F4F7EE;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.item .subtitle {
+    color: #86878A;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* desc */
+
+.desc {
+    background: #F4F6EE;
+    height: 100%;
+}
+
+.desc-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.desc .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc .text .title {
+    font-weight: 700;
+    font-size: 55px;
+    color: #86878A;
+}
+
+.desc .text .subtitle {
+    font-weight: 700;
+    font-size: 55px;
+    color: #1E2025;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1E2025;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 35px 25px;
+    width: 350px;
+    height: 400px;
+    margin: 20px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-top p {
+    font-weight: 700;
+    font-size: 20px;
+    color: #1E2025;
+    padding: 14px 16px;
+    background: #F4F6EE;
+    border-radius: 30px;
+}
+
+.card-top .numb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F4F6EE;
+    font-weight: 700;
+    font-size: 30px;
+    border: 2px solid #F4F6EE;
+    padding: 10px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-text .title {
+    color: #F4F7EE;
+    font-weight: 600;
+    font-size: 34px;
+}
+
+.card-text .subtitle {
+    color: #86878A;
+    font-weight: 500;
+    font-size: 20px;
+}
