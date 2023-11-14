@@ -9,19 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./utils/animate.css">
+
+    <link rel="stylesheet" src="url-to-cdn/splide.min.css">
+    <script src="./index.js"></script>
 </head>
 
 <body>
+
     <section class="main">
             <div class="main-inner">
                 <div class="nav">
                     <div class="nav-inner">
-                        <svg width="536" height="97" viewBox="0 0 536 97" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M193.164 29.2188H161.016V49.6094H188.945V54.0625H161.016V82.0312H155.312V24.8438H193.164V29.2188ZM236.328 82.0312H198.047V24.8438H235.898V29.2188H203.75V49.2969H231.719V53.7891H203.75V77.6172H236.328V82.0312ZM237.305 29.2188V24.8047H280.312V29.2188H261.797V82.0312H255.82V29.2188H237.305ZM324.766 82.0312H286.484V24.8438H324.336V29.2188H292.188V49.2969H320.156V53.7891H292.188V77.6172H324.766V82.0312ZM354.219 23.7891C359.401 23.7891 363.802 25.0781 367.422 27.6562C371.068 30.2083 373.581 33.9844 374.961 38.9844L369.727 40.1953C368.789 36.5495 367.018 33.6719 364.414 31.5625C361.81 29.4271 358.346 28.3594 354.023 28.3594C347.539 28.3594 342.878 30.4688 340.039 34.6875C337.227 38.9062 335.82 45.0781 335.82 53.2031C335.82 56.6667 335.99 59.6875 336.328 62.2656C336.693 64.8438 337.305 67.1745 338.164 69.2578C339.023 71.3411 340.143 73.0469 341.523 74.375C342.93 75.6771 344.674 76.6797 346.758 77.3828C348.841 78.0599 351.302 78.3984 354.141 78.3984C362.24 78.3984 367.617 74.7005 370.273 67.3047L375.156 68.8281C373.594 73.5417 370.938 77.0833 367.188 79.4531C363.464 81.8229 359.01 83.0078 353.828 83.0078C345.755 83.0078 339.74 80.651 335.781 75.9375C331.823 71.1979 329.844 63.6198 329.844 53.2031C329.844 43.151 331.966 35.7422 336.211 30.9766C340.456 26.1849 346.458 23.7891 354.219 23.7891ZM423.594 49.375V24.8438H429.258V82.0312H423.594V53.9062H389.609V82.0312H383.906V24.8438H389.609V49.375H423.594Z" fill="black"/>
-                            <path d="M0 30.1045C0 19.0588 8.9543 10.1045 20 10.1045H89.7188V75.9899C89.7188 87.0356 80.7644 95.9899 69.7188 95.9899H0V30.1045Z" fill="black"/>
-                            <path d="M63.8911 27.8867H29.7334V49.5518H59.4087V54.2832H29.7334V84H23.6738V23.2383H63.8911V27.8867Z" fill="white"/>
-                            <line x1="121.125" y1="10.1045" x2="121.125" y2="97.0003" stroke="black" stroke-width="3"/>
+                        <svg width="234" height="62" viewBox="0 0 234 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M106.271 15.9922H86.1777V28.7363H103.634V31.5195H86.1777V49H82.6133V13.2578H106.271V15.9922ZM133.248 49H109.322V13.2578H132.979V15.9922H112.887V28.541H130.367V31.3486H112.887V46.2412H133.248V49ZM149.581 16.041H140.816V46.2168H148.214C150.737 46.2168 152.844 45.9482 154.537 45.4111C156.23 44.8577 157.597 43.9544 158.639 42.7012C159.697 41.4479 160.445 39.8854 160.885 38.0137C161.34 36.1419 161.568 33.8063 161.568 31.0068C161.568 28.5003 161.381 26.3682 161.007 24.6104C160.632 22.8363 159.998 21.29 159.103 19.9717C158.207 18.637 156.97 17.6523 155.392 17.0176C153.829 16.3665 151.892 16.041 149.581 16.041ZM137.252 13.2578H149.557C152.145 13.2578 154.374 13.5671 156.246 14.1855C158.118 14.7878 159.721 15.7806 161.056 17.1641C162.407 18.5312 163.408 20.3623 164.059 22.6572C164.726 24.9359 165.06 27.7109 165.06 30.9824C165.06 35.3118 164.49 38.8031 163.351 41.4561C162.211 44.109 160.502 46.0296 158.224 47.2178C155.961 48.4059 153.015 49 149.386 49H137.252V13.2578ZM195.357 49H171.432V13.2578H195.089V15.9922H174.996V28.541H192.477V31.3486H174.996V46.2412H195.357V49ZM208.272 49L196.041 13.2578H199.825L206.979 34.4492C207.158 34.9701 207.613 36.3535 208.346 38.5996C209.094 40.8294 209.664 42.5384 210.055 43.7266C210.445 42.5547 211.007 40.9027 211.739 38.7705C212.472 36.6383 212.968 35.1979 213.229 34.4492L220.26 13.2578H223.873L211.642 49H208.272Z" fill="black"/>
+                            <circle cx="30.5" cy="31.5" r="30.5" fill="black"/>
+                            <line x1="19" y1="22" x2="44.3176" y2="22" stroke="white" stroke-width="4"/>
+                            <path d="M20.4551 47.1086V42.3593V35.2782C20.4551 33.5907 21.8231 32.2227 23.5106 32.2227V32.2227C23.5106 32.2227 23.5106 32.2227 23.5106 32.2227C23.5106 32.2227 32.9419 32.2227 41.1165 32.2227C41.1165 32.2227 41.1165 32.2227 41.1165 32.2227C41.1165 32.2227 42.8305 32.2227 44.3176 32.2227" stroke="white" stroke-width="4"/>
+                            <line x1="71" y1="1" x2="71" y2="62" stroke="black" stroke-width="2"/>
                         </svg>
+                            
                         <div class="nav-btns">
                             <ul>
                                 <li>Портфолио</li>
@@ -32,20 +47,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-title">
-                    <p class="title">Разработка лэндингов, корпоративных сайтов и интернет магазинов</p>
-                    <p class="subtitle">Для бизнеса | фрилансера | мероприятия</p>
-                </div>
-                <div class="main-subtitle">
-                    <div class="action">
-                        <a>Оставить заявку</a>
-                        <svg width="41" height="24" viewBox="0 0 41 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M40.0607 13.0607C40.6464 12.4749 40.6464 11.5251 40.0607 10.9393L30.5147 1.3934C29.9289 0.807609 28.9792 0.807609 28.3934 1.3934C27.8076 1.97918 27.8076 2.92893 28.3934 3.51472L36.8787 12L28.3934 20.4853C27.8076 21.0711 27.8076 22.0208 28.3934 22.6066C28.9792 23.1924 29.9289 23.1924 30.5147 22.6066L40.0607 13.0607ZM1.31134e-07 13.5L39 13.5L39 10.5L-1.31134e-07 10.5L1.31134e-07 13.5Z" fill="black"/>
-                        </svg>
+                <div class="main-colms">
+                    <div class="main-title wow animate__fadeInLeft">
+                        <p class="title">Разработка лэндингов, корпоративных сайтов и интернет магазинов</p>
+                        <p class="subtitle">Для бизнеса | фрилансера | мероприятия</p>
+                        <div class="action">
+                            <a class="link">Оставить заявку</a>
+                            <svg class="svg" width="41" height="24" viewBox="0 0 41 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path" d="M40.0607 13.0607C40.6464 12.4749 40.6464 11.5251 40.0607 10.9393L30.5147 1.3934C29.9289 0.807609 28.9792 0.807609 28.3934 1.3934C27.8076 1.97918 27.8076 2.92893 28.3934 3.51472L36.8787 12L28.3934 20.4853C27.8076 21.0711 27.8076 22.0208 28.3934 22.6066C28.9792 23.1924 29.9289 23.1924 30.5147 22.6066L40.0607 13.0607ZM1.31134e-07 13.5L39 13.5L39 10.5L-1.31134e-07 10.5L1.31134e-07 13.5Z" fill="black"/>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="text">
-                        <p class="title">Решаем самые амбициозные задачи.</p>
-                        <p class="subtitle">Находим подход к каждому клиенту, концентрируясь на проблеме.</p>
+                    <div class="main-subtitle wow animate__fadeInRight">
+                        <p class="p">UI|UX design</p>
+                        <div class="row">
+                            <p class="p">E-commerce</p>
+                            <p class="p">Landing Page</p>
+                        </div>
+                        <div class="row">
+                            <p class="p">Branding</p>
+                            <p class="p">Клиенты</p>
+                        </div>
+                        <div class="row">
+                            <p class="p">Продажи</p>
+                            <p class="p">SEO</p>
+                        </div>
+                        <p class="text">Находим подход к каждому клиенту, концентрируясь на проблеме.</p>
                     </div>
                 </div>
             </div>
@@ -54,20 +81,20 @@
     <section class="info">
            <div class="info-inner">
                 <div class="text">
-                    <div class="text-inner">
+                    <div class="text-inner wow animate__fadeInLeft">
                         <p class="main-title">Оживите свою идею</p>
                         <p class="title">
                             с помощью наших веб-решений
                         </p>
                     </div>
-                    <p class="subtitle">
+                    <p class="subtitle wow animate__fadeInRight">
                         — как команда с опытом в разработке и маркетинге, создаём не 
                         только красивую “обёртку”, но и качественный продукт
                     </p>
                 </div>
                 <hr class="line"></hr>
                 <div class="items">
-                    <div class="item">
+                    <div class="item wow animate__fadeIn">
                         <div>
                             <svg width="78" height="68" viewBox="0 0 78 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect y="30.4902" width="23.4" height="36.8727" rx="9" fill="#F4F7EE"/>
@@ -78,7 +105,7 @@
                         <p class="title">Маркетинг</p>
                         <p class="subtitle">Перед началом работы над проектом тщательно анализируем рынок на конкурентов, целевую аудиторию и актуальные тенденции</p>
                     </div>
-                    <div class="item">
+                    <div class="item wow animate__fadeIn">
                         <div>
                             <svg width="78" height="68" viewBox="0 0 78 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="3" y="33.5615" width="17.0879" height="30.7983" rx="6" fill="#F4F7EE" stroke="#F4F7EE" stroke-width="6"/>
@@ -86,10 +113,10 @@
                             <rect x="27.4561" y="15.5928" width="23.0879" height="51.7672" rx="9" fill="#F4F7EE"/>
                             </svg>
                         </div>
-                        <p class="title">Маркетинг</p>
-                        <p class="subtitle">Перед началом работы над проектом тщательно анализируем рынок на конкурентов, целевую аудиторию и актуальные тенденции</p>
+                        <p class="title">UX|UI дизайн</p>
+                        <p class="subtitle">Создаём дизайн будущему продукту с помощью креативного визуала, который выделит вас на фоне конкурентов</p>
                     </div>
-                    <div class="item">
+                    <div class="item wow animate__fadeIn">
                         <div>
                             <svg width="78" height="68" viewBox="0 0 78 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect y="30.5615" width="23.0879" height="36.7983" rx="9" fill="#F4F7EE"/>
@@ -97,8 +124,8 @@
                             <rect x="27.4561" y="15.5928" width="23.0879" height="51.7672" rx="9" fill="#F4F7EE"/>
                             </svg>
                         </div>
-                        <p class="title">Маркетинг</p>
-                        <p class="subtitle">Перед началом работы над проектом тщательно анализируем рынок на конкурентов, целевую аудиторию и актуальные тенденции</p>
+                        <p class="title">Разработка</p>
+                        <p class="subtitle">Наша команда профессионалов создаёт уникальное веб-решения, используя передовые технологии.</p>
                     </div>
                 </div>
            </div>
@@ -107,11 +134,11 @@
     <section class="desc">
         <div class="desc-inner">
             <div class="text">
-                <p class="title">Работа с нами - это</p>
-                <p class="subtitle">Легко. Быстро. Прибыльно.</p>
+                <p class="title wow animate__fadeInLeft">Работа с нами - это</p>
+                <p class="subtitle wow animate__fadeInRight">Легко. Быстро. Прибыльно.</p>
             </div>
             <div class="cards">
-                <div class="card">
+                <div class="card wow animate__fadeIn">
                     <div class="card-top">
                         <p>Простота</p>
                         <div class="numb">1</div>
@@ -124,7 +151,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card wow animate__fadeIn">
                     <div class="card-top">
                         <p>Гибкость</p>
                         <div class="numb">2</div>
@@ -137,7 +164,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card wow animate__fadeIn">
                     <div class="card-top">
                         <p>Поддержка</p>
                         <div class="numb">3</div>
@@ -150,7 +177,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card wow animate__fadeIn">
                     <div class="card-top">
                         <p>Результат</p>
                         <div class="numb">4</div>
@@ -169,7 +196,7 @@
 
     <section class="tech">
         <div class="tech-inner">
-            <div class="text">
+            <div class="text wow animate__fadeInLeft">
                 <p class="title">
                     Используем 
                 </p>
@@ -179,7 +206,7 @@
                 </p>
             </div>
             <hr class="line2">
-            <div class="tech-grid">
+            <div class="tech-grid wow animate__fadeInRight">
                 <div class="svg-logo">
                     <svg width="64" height="56" viewBox="0 0 64 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_162_295)">
@@ -474,10 +501,411 @@
         </div>
     </section>
 
-    <section class="process">
-        <div class="process-inner">
-
+    <section class="projects">
+        <div class="projects-inner">
+            <div class="text">
+                <p class="title wow animate__fadeInLeft">Демонстрационное</p>
+                <p class="subtitle wow animate__fadeInRight">портфолио наших проектов</p>
+            </div>
+            <div class="splide wow animate__fadeIn" role="group">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <img src="./assets/img/Rectangle 44.png" alt="img1"/>
+                            <div class="text">
+                                <p class="left">landing page</p>
+                                <p class="right">лендинг для кофейни</p>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <img src="./assets/img/Rectangle 45.png" alt="img2"/>
+                            <div class="text">
+                                <p class="left">landing page</p>
+                                <p class="right">лендинг для кофейни</p>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <img src="./assets/img/Rectangle 46.png" alt="img3"/>
+                            <div class="text">
+                                <p class="left">landing page</p>
+                                <p class="right">лендинг для кофейни</p>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <img src="./assets/img/Rectangle 45.png" alt="img2"/>
+                            <div class="text">
+                                <p class="left">landing page</p>
+                                <p class="right">лендинг для кофейни</p>
+                            </div>
+                          </li>
+                      </ul>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section class="process">
+        <div class="process-inner">
+            <div class="col wow animate__fadeInLeft">
+                <div class="action">
+                    <div class="text">
+                        <h1>Процесс разработки вашего проекта</h1>
+                        <p>Работаем строго по плану, соблюдая все дедлайны</p>
+                    </div>
+                    <div class="btn">
+                        <a>Обсудить проект</a>
+                    </div>
+                    <p>— сайт под ключ от 15 дней</p>
+                </div>
+            </div>
+            <div class="col wow animate__fadeInRight">
+                <div class="col-item">
+                    <hr class="line3">
+                    <div class="col-item-inner">
+                        <p class="numb">01</p>
+                        <div class="text">
+                            <p class="title">Первый контакт</p>
+                            <p class="subtitle">
+                                Связываемся и обсуждаем будущий проект. <br/>
+                                После формирования структуры проекта и объёма работ согласовываем процесс оплаты.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-item">
+                    <hr class="line3">
+                    <div class="col-item-inner">
+                        <p class="numb">02</p>
+                        <div class="text">
+                            <p class="title">Анализ рынка и дизайн</p>
+                            <p class="subtitle">
+                                Анализируем конкурентов в вашей нише и создаём несколько 
+                                вариантов дизайна-прототипа на утверждение.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-item">
+                    <hr class="line3">
+                    <div class="col-item-inner">
+                        <p class="numb">03</p>
+                        <div class="text">
+                            <p class="title">Разработка сайта</p>
+                            <p class="subtitle">
+                                Разрабатываем backend и frontend. Адаптируем под мобильные устройства. 
+                                <br/>
+                                Подключаем весь функционал: CMS, посадка на хостинг, SSL сертификат, корпоративная почта и др.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-item">
+                    <hr class="line3">
+                    <div class="col-item-inner">
+                        <p class="numb">04</p>
+                        <div class="text">
+                            <p class="title">Запуск и обучение</p>
+                            <p class="subtitle">
+                                Запускаем проект строго в назначенные сроки. 
+                                <br/>
+                                Обучаем Вас пользоваться всем функционалом сайта от А до Я
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col wow animate__fadeInRight">
+                <div class="btn">
+                    <a class="link">Обсудить проект</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price">
+        <div class="price-inner">
+            <div class="title"> 
+                <h1 class="wow animate__fadeInLeft">Услуги и цены</h1>
+                <hr class="line4">
+                <p class="wow animate__fadeInRight">
+                    Стоимость не является финальной и зависит от многих факторов. 
+                    Чтобы узнать реальную стоимость проекта, оставьте заявку на обсуждение проекта
+                </p>
+            </div>
+            <div class="cards-price">
+                <div class="card-price wow animate__fadeIn">
+                    <div class="title">
+                        <p class="time">
+                            От 15 дней
+                        </p>
+                        <p class="title">Landing Page</p>
+                        <p class="subtitle">Одностраничный сайт</p>
+                    </div>
+                    <svg width="171" height="173" viewBox="0 0 171 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1.5H162C166.142 1.5 169.5 4.85786 169.5 9V156V163.944C169.5 168.113 166.099 171.482 161.93 171.443L8.39103 170.008C7.61712 170.001 6.85049 169.858 6.12589 169.587C3.65215 168.659 1.96567 166.351 1.83373 163.712L1.75187 162.075L1.50944 157.226L1.50936 157.225L1.50735 157.185L9 1.5ZM9 1.5C4.86136 1.5 1.5 4.84368 1.5 8.9893M9 1.5L1.5 8.9893M1.5 8.9893V156.92M1.5 8.9893V156.92M1.5 156.92C1.5 157.041 1.50315 157.104 1.50731 157.184L1.5 156.92Z" fill="#F4F6EE" stroke="#DEE1DA" stroke-width="3"/>
+                        <rect x="67" y="14" width="25" height="3" fill="#D9D9D9"/>
+                        <rect x="11" y="65" width="48" height="5" fill="#D9D9D9"/>
+                        <rect x="11" y="72" width="48" height="5" fill="#D9D9D9"/>
+                        <rect x="11" y="137" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="11" y="137" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="11" y="151" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="11" y="144" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="123" y="14" width="25" height="3" fill="#D9D9D9"/>
+                        <rect x="95" y="14" width="25" height="3" fill="#D9D9D9"/>
+                        <rect x="10" y="9" width="23" height="10" rx="3" fill="#D9D9D9"/>
+                        <rect x="10" y="43" width="51" height="18" rx="3" fill="#D9D9D9"/>
+                        <rect x="11" y="103" width="43" height="32" rx="3" fill="#D9D9D9"/>
+                        <rect x="63" y="137" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="63" y="137" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="63" y="151" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="63" y="144" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="63" y="103" width="43" height="32" rx="3" fill="#D9D9D9"/>
+                        <rect x="116" y="137" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="116" y="137" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="116" y="151" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="116" y="144" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="116" y="103" width="43" height="32" rx="3" fill="#D9D9D9"/>
+                        <path d="M131.844 39.3299C134.329 37.3485 138.02 38.9154 138.321 42.0789L142.148 82.3743C142.434 85.3913 139.392 87.6186 136.603 86.4345L101.131 71.3778C98.3416 70.1937 97.8307 66.4583 100.2 64.5686L131.844 39.3299Z" fill="#D9D9D9"/>
+                    </svg>
+                    <p class="pricee">От <span>65 000₽</span></p>
+                </div>
+                <div class="card-price wow animate__fadeIn">
+                    <div class="title">
+                        <p class="time">
+                            От 30 дней
+                        </p>
+                        <p class="title">Website</p>
+                        <p class="subtitle">Многостраничный сайт</p>
+                    </div>
+                    <svg width="368" height="190" viewBox="0 0 368 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M206 10.5H359C363.142 10.5 366.5 13.8579 366.5 18V165V172.944C366.5 177.113 363.099 180.482 358.93 180.443L205.391 179.008C204.617 179.001 203.85 178.858 203.126 178.587C200.652 177.659 198.966 175.351 198.834 172.712L198.752 171.075L198.509 166.226L198.509 166.225L198.507 166.185L206 10.5ZM206 10.5C201.861 10.5 198.5 13.8437 198.5 17.9893M206 10.5L198.5 17.9893M198.5 17.9893V165.92M198.5 17.9893V165.92M198.5 165.92C198.5 166.041 198.503 166.104 198.507 166.184L198.5 165.92Z" fill="#F4F6EE" stroke="#DEE1DA" stroke-width="3"/>
+                        <rect x="264" y="23" width="25" height="3" fill="#D9D9D9"/>
+                        <rect x="208" y="74" width="48" height="5" fill="#D9D9D9"/>
+                        <rect x="208" y="81" width="48" height="5" fill="#D9D9D9"/>
+                        <rect x="208" y="146" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="208" y="146" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="208" y="160" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="208" y="153" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="320" y="23" width="25" height="3" fill="#D9D9D9"/>
+                        <rect x="292" y="23" width="25" height="3" fill="#D9D9D9"/>
+                        <rect x="207" y="18" width="23" height="10" rx="3" fill="#D9D9D9"/>
+                        <rect x="207" y="52" width="51" height="18" rx="3" fill="#D9D9D9"/>
+                        <rect x="208" y="112" width="43" height="32" rx="3" fill="#D9D9D9"/>
+                        <rect x="260" y="146" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="260" y="146" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="260" y="160" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="260" y="153" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="260" y="112" width="43" height="32" rx="3" fill="#D9D9D9"/>
+                        <rect x="313" y="146" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="313" y="146" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="313" y="160" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="313" y="153" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="313" y="112" width="43" height="32" rx="3" fill="#D9D9D9"/>
+                        <path d="M311.925 51.8883C311.904 50.0502 314.165 49.1596 315.403 50.5182L322.098 57.8649C322.633 58.4517 323.464 58.6667 324.216 58.4127L333.633 55.2329C335.375 54.6448 336.921 56.52 336.011 58.1174L331.093 66.7549C330.7 67.4448 330.753 68.3017 331.227 68.9386L337.161 76.9123C338.258 78.3869 336.953 80.4365 335.152 80.0651L325.418 78.0567C324.64 77.8962 323.841 78.2109 323.382 78.8585L317.633 86.9663C316.569 88.4657 314.216 87.8573 314.013 86.0303L312.915 76.1516C312.828 75.3625 312.282 74.7001 311.524 74.4634L302.036 71.5006C300.281 70.9527 300.133 68.527 301.808 67.7694L310.864 63.6724C311.587 63.3452 312.048 62.6211 312.039 61.8272L311.925 51.8883Z" fill="#D9D9D9"/>
+                        <path d="M9 10.5H162C166.142 10.5 169.5 13.8579 169.5 18V165V172.944C169.5 177.113 166.099 180.482 161.93 180.443L8.39103 179.008C7.61712 179.001 6.85049 178.858 6.12589 178.587C3.65215 177.659 1.96567 175.351 1.83373 172.712L1.75187 171.075L1.50944 166.226L1.50936 166.225L1.50735 166.185L9 10.5ZM9 10.5C4.86136 10.5 1.5 13.8437 1.5 17.9893M9 10.5L1.5 17.9893M1.5 17.9893V165.92M1.5 17.9893V165.92M1.5 165.92C1.5 166.041 1.50315 166.104 1.50731 166.184L1.5 165.92Z" fill="#F4F6EE" stroke="#DEE1DA" stroke-width="3"/>
+                        <rect x="67" y="23" width="25" height="3" fill="#D9D9D9"/>
+                        <rect x="11" y="74" width="48" height="5" fill="#D9D9D9"/>
+                        <rect x="11" y="82" width="27" height="3" fill="#D9D9D9"/>
+                        <rect x="11" y="88" width="27" height="3" fill="#D9D9D9"/>
+                        <rect x="11" y="146" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="11" y="146" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="11" y="160" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="11" y="153" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="123" y="23" width="25" height="3" fill="#D9D9D9"/>
+                        <rect x="95" y="23" width="25" height="3" fill="#D9D9D9"/>
+                        <rect x="10" y="18" width="23" height="10" rx="3" fill="#D9D9D9"/>
+                        <rect x="10" y="52" width="19" height="18" rx="3" fill="#D9D9D9"/>
+                        <rect x="60" y="52" width="19" height="18" rx="3" fill="#D9D9D9"/>
+                        <rect x="35" y="52" width="19" height="18" rx="3" fill="#D9D9D9"/>
+                        <rect x="41" y="81" width="19" height="10" rx="3" fill="#D9D9D9"/>
+                        <rect x="11" y="112" width="43" height="32" rx="3" fill="#D9D9D9"/>
+                        <rect x="63" y="112" width="34" height="53" fill="#D9D9D9"/>
+                        <rect x="116" y="146" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="116" y="146" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="116" y="160" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="116" y="153" width="43" height="5" fill="#D9D9D9"/>
+                        <rect x="116" y="112" width="43" height="32" rx="3" fill="#D9D9D9"/>
+                        <path d="M114.925 51.8883C114.904 50.0502 117.165 49.1596 118.403 50.5182L125.098 57.8649C125.633 58.4517 126.464 58.6667 127.216 58.4127L136.633 55.2329C138.375 54.6448 139.921 56.52 139.011 58.1174L134.093 66.7549C133.7 67.4448 133.753 68.3017 134.227 68.9386L140.161 76.9123C141.258 78.3869 139.953 80.4365 138.152 80.0651L128.418 78.0567C127.64 77.8962 126.841 78.2109 126.382 78.8585L120.633 86.9663C119.569 88.4657 117.216 87.8573 117.013 86.0303L115.915 76.1516C115.828 75.3625 115.282 74.7001 114.524 74.4634L105.036 71.5006C103.281 70.9527 103.133 68.527 104.808 67.7694L113.864 63.6724C114.587 63.3452 115.048 62.6211 115.039 61.8272L114.925 51.8883Z" fill="#D9D9D9"/>
+                        <path d="M263 1.5H110C105.858 1.5 102.5 4.85559 102.5 8.99828V172.617C102.5 172.675 102.501 172.722 102.503 172.773C102.504 172.795 102.505 172.816 102.505 172.831L102.508 172.881L102.752 178.254L102.851 180.445C102.969 183.051 104.585 185.353 106.996 186.349C107.788 186.676 108.635 186.849 109.492 186.858L262.923 188.438C267.095 188.48 270.5 185.11 270.5 180.938V171.575V9C270.5 4.85786 267.142 1.5 263 1.5Z" fill="#F4F6EE" stroke="#DEE1DA" stroke-width="3"/>
+                        <rect x="168" y="15.1196" width="25" height="3.30539" fill="#D9D9D9"/>
+                        <rect x="112" y="71.3115" width="48" height="5.50898" fill="#D9D9D9"/>
+                        <rect x="112" y="79.0239" width="48" height="5.50898" fill="#D9D9D9"/>
+                        <rect x="112" y="150.641" width="43" height="5.50898" fill="#D9D9D9"/>
+                        <rect x="112" y="150.641" width="43" height="5.50898" fill="#D9D9D9"/>
+                        <rect x="112" y="166.066" width="43" height="5.50898" fill="#D9D9D9"/>
+                        <rect x="112" y="158.353" width="43" height="5.50898" fill="#D9D9D9"/>
+                        <rect x="224" y="15.1196" width="25" height="3.30539" fill="#D9D9D9"/>
+                        <rect x="196" y="15.1196" width="25" height="3.30539" fill="#D9D9D9"/>
+                        <rect x="111" y="9.61084" width="23" height="11.018" rx="3" fill="#D9D9D9"/>
+                        <rect x="111" y="47.0718" width="51" height="19.8323" rx="3" fill="#D9D9D9"/>
+                        <rect x="112" y="113.18" width="43" height="35.2575" rx="3" fill="#D9D9D9"/>
+                        <rect x="164" y="150.641" width="43" height="5.50898" fill="#D9D9D9"/>
+                        <rect x="164" y="150.641" width="43" height="5.50898" fill="#D9D9D9"/>
+                        <rect x="164" y="166.066" width="43" height="5.50898" fill="#D9D9D9"/>
+                        <rect x="164" y="158.353" width="43" height="5.50898" fill="#D9D9D9"/>
+                        <rect x="164" y="113.18" width="43" height="35.2575" rx="3" fill="#D9D9D9"/>
+                        <rect x="217" y="150.641" width="43" height="5.50898" fill="#D9D9D9"/>
+                        <rect x="217" y="150.641" width="43" height="5.50898" fill="#D9D9D9"/>
+                        <rect x="217" y="166.066" width="43" height="5.50898" fill="#D9D9D9"/>
+                        <rect x="217" y="158.353" width="43" height="5.50898" fill="#D9D9D9"/>
+                        <rect x="217" y="113.18" width="43" height="35.2575" rx="3" fill="#D9D9D9"/>
+                        <path d="M232.854 43.0197C235.246 40.9173 239.03 42.687 239.32 46.0437L243.208 91.1549C243.471 94.2082 240.589 96.3243 237.888 95.061L201.846 78.2048C199.145 76.9415 198.524 73.1872 200.7 71.2748L232.854 43.0197Z" fill="#D9D9D9"/>
+                    </svg>
+                    <p class="pricee">От <span>85 000₽</span></p>
+                </div>
+                <div class="card-price wow animate__fadeIn">
+                    <div class="title">
+                        <p class="time">
+                            от 30 дней
+                        </p>
+                        <p class="title">E-commerce</p>
+                        <p class="subtitle">Интернет-магазин</p>
+                    </div>
+                    <svg width="377" height="214" viewBox="0 0 377 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M368 14.5H226.963C222.821 14.5 219.463 17.8556 219.463 21.9983V185.625C219.463 185.679 219.463 185.723 219.465 185.771C219.466 185.791 219.467 185.81 219.468 185.822L219.47 185.866L219.696 191.249L219.8 193.715C219.902 196.148 221.374 198.313 223.598 199.304C224.397 199.66 225.261 199.849 226.136 199.858L367.917 201.433C372.092 201.479 375.5 198.108 375.5 193.933V184.575V22C375.5 17.8579 372.143 14.5 368 14.5Z" fill="#F4F6EE" stroke="#DEE1DA" stroke-width="3"/>
+                        <path d="M150.038 14.5H9C4.85842 14.5 1.5 17.8556 1.5 21.9983V185.625C1.5 185.679 1.50058 185.723 1.5024 185.771C1.50316 185.791 1.50407 185.81 1.50466 185.822L1.50663 185.866L1.7332 191.249L1.83702 193.715C1.93942 196.148 3.4107 198.313 5.63492 199.304C6.43439 199.66 7.29829 199.849 8.17346 199.858L149.954 201.433C154.129 201.479 157.538 198.108 157.538 193.933V184.575V22C157.538 17.8579 154.18 14.5 150.038 14.5Z" fill="#F4F6EE" stroke="#DEE1DA" stroke-width="3"/>
+                        <rect x="62.3594" y="28.1196" width="23.1875" height="3.30539" fill="#D9D9D9"/>
+                        <rect x="10.4199" y="158" width="92.75" height="10" fill="#D9D9D9"/>
+                        <rect x="10.4199" y="177" width="92.75" height="10" fill="#D9D9D9"/>
+                        <rect x="9.49219" y="52" width="40.81" height="40" rx="7" fill="#D9D9D9"/>
+                        <rect x="62.3594" y="103" width="40.81" height="40" rx="7" fill="#D9D9D9"/>
+                        <rect x="114.3" y="28.1196" width="23.1875" height="3.30539" fill="#D9D9D9"/>
+                        <rect x="12.2754" y="108" width="40.81" height="16" fill="#D9D9D9"/>
+                        <rect x="62.3594" y="56" width="40.81" height="16" fill="#D9D9D9"/>
+                        <rect x="62.3594" y="84" width="40.81" height="7" fill="#D9D9D9"/>
+                        <rect x="12.2754" y="134" width="40.81" height="7" fill="#D9D9D9"/>
+                        <rect x="88.3301" y="28.1196" width="23.1875" height="3.30539" fill="#D9D9D9"/>
+                        <rect x="9.49219" y="22.6108" width="21.3325" height="11.018" rx="3" fill="#D9D9D9"/>
+                        <path d="M260.41 1.5H119.372C115.234 1.5 111.872 4.84048 111.872 8.98689V194.773C111.872 194.82 111.873 194.859 111.874 194.903L111.876 194.944L111.877 194.976L112.105 201.092L112.226 204.335C112.315 206.722 113.695 208.872 115.828 209.946C116.718 210.394 117.698 210.634 118.695 210.646L260.315 212.424C264.494 212.476 267.91 209.103 267.91 204.924V193.563V9C267.91 4.85786 264.552 1.5 260.41 1.5Z" fill="#F4F6EE" stroke="#DEE1DA" stroke-width="3"/>
+                        <rect x="171.805" y="16.1792" width="23.1875" height="3.59438" fill="#D9D9D9"/>
+                        <rect x="119.864" y="183.513" width="39.8825" height="5.99063" fill="#D9D9D9"/>
+                        <rect x="119.864" y="83.4697" width="36.1725" height="6.52457" fill="#D9D9D9"/>
+                        <rect x="119.864" y="92.1689" width="15.7675" height="4.34972" fill="#D9D9D9"/>
+                        <rect x="223.744" y="16.1792" width="23.1875" height="3.59438" fill="#D9D9D9"/>
+                        <rect x="197.775" y="16.1792" width="23.1875" height="3.59438" fill="#D9D9D9"/>
+                        <rect x="118.938" y="10.189" width="21.3325" height="11.9813" rx="3" fill="#D9D9D9"/>
+                        <rect x="119.864" y="45.4097" width="36.1725" height="34.7977" rx="3" fill="#D9D9D9"/>
+                        <rect x="119.864" y="83.4697" width="36.1725" height="6.52457" fill="#D9D9D9"/>
+                        <rect x="119.864" y="92.1689" width="15.7675" height="4.34972" fill="#D9D9D9"/>
+                        <rect x="119.864" y="45.4097" width="36.1725" height="34.7977" rx="3" fill="#D9D9D9"/>
+                        <rect x="119.864" y="83.4697" width="36.1725" height="6.52457" fill="#D9D9D9"/>
+                        <rect x="119.864" y="92.1689" width="15.7675" height="4.34972" fill="#D9D9D9"/>
+                        <rect x="119.864" y="45.4097" width="36.1725" height="34.7977" rx="3" fill="#D9D9D9"/>
+                        <rect x="121.719" y="83.4697" width="36.1725" height="6.52457" fill="#D9D9D9"/>
+                        <rect x="121.719" y="92.1689" width="15.7675" height="4.34972" fill="#D9D9D9"/>
+                        <rect x="121.719" y="45.4097" width="36.1725" height="34.7977" rx="3" fill="#D9D9D9"/>
+                        <rect x="222.817" y="83.4697" width="36.1725" height="6.52457" fill="#D9D9D9"/>
+                        <rect x="222.817" y="92.1689" width="15.7675" height="4.34972" fill="#D9D9D9"/>
+                        <rect x="222.817" y="45.4097" width="36.1725" height="34.7977" rx="3" fill="#D9D9D9"/>
+                        <rect x="171.805" y="83.4697" width="36.1725" height="6.52457" fill="#D9D9D9"/>
+                        <rect x="171.805" y="93.2568" width="15.7675" height="4.34972" fill="#D9D9D9"/>
+                        <rect x="171.805" y="45.4097" width="36.1725" height="34.7977" rx="3" fill="#D9D9D9"/>
+                        <rect x="119.864" y="83.4697" width="37.1" height="6.52457" fill="#D9D9D9"/>
+                        <rect x="119.864" y="92.1689" width="15.7675" height="4.34972" fill="#D9D9D9"/>
+                        <rect x="119.864" y="45.4097" width="37.1" height="34.7977" rx="3" fill="#D9D9D9"/>
+                        <rect x="221.89" y="83.4697" width="37.1" height="6.52457" fill="#D9D9D9"/>
+                        <rect x="221.89" y="92.1689" width="16.695" height="4.34972" fill="#D9D9D9"/>
+                        <rect x="221.89" y="45.4097" width="37.1" height="34.7977" rx="3" fill="#D9D9D9"/>
+                        <rect x="170.877" y="83.4697" width="36.1725" height="6.52457" fill="#D9D9D9"/>
+                        <rect x="170.877" y="93.2568" width="15.7675" height="4.34972" fill="#D9D9D9"/>
+                        <rect x="170.877" y="45.4097" width="36.1725" height="34.7977" rx="3" fill="#D9D9D9"/>
+                        <rect x="119.864" y="141.104" width="38.0275" height="6.52457" fill="#D9D9D9"/>
+                        <rect x="119.864" y="149.803" width="15.7675" height="4.34972" fill="#D9D9D9"/>
+                        <rect x="119.864" y="103.043" width="38.0275" height="34.7977" rx="3" fill="#D9D9D9"/>
+                        <rect x="221.89" y="141.104" width="37.1" height="6.52457" fill="#D9D9D9"/>
+                        <rect x="221.89" y="149.803" width="16.695" height="4.34972" fill="#D9D9D9"/>
+                        <rect x="221.89" y="103.043" width="37.1" height="34.7977" rx="3" fill="#D9D9D9"/>
+                        <rect x="170.877" y="141.104" width="36.1725" height="6.52457" fill="#D9D9D9"/>
+                        <rect x="170.877" y="150.89" width="15.7675" height="4.34972" fill="#D9D9D9"/>
+                        <rect x="170.877" y="103.043" width="36.1725" height="34.7977" rx="3" fill="#D9D9D9"/>
+                        <path d="M168.094 184.047H207.976V190.038H168.094V184.047Z" fill="#D9D9D9"/>
+                        <rect x="220.963" y="183.513" width="39.8825" height="5.99063" fill="#D9D9D9"/>
+                        <rect x="120.792" y="31" width="139.125" height="7" fill="#D9D9D9"/>
+                    </svg>
+                    <p class="pricee">От <span>110 000₽</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="feedback-inner">
+            <div class="title">
+                <h1 class="wow animate__fadeInLeft">НАПИШИТЕ НАМ И МЫ НАЧНЁМ РАБОТУ УЖЕ СЕГОДНЯ</h1>
+                <p class="wow animate__fadeInRight">— обсудим ваш проект?</p>
+            </div>
+            <div class="action">
+                <div class="inputs wow animate__fadeInLeft">
+                    <div class="form__group">
+                        <input type="input" placeholder="Ваше имя" id="name" class="form__field">
+                        <label for="name" class="form__label">Ваше имя</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" placeholder="Email" id="email" class="form__field">
+                        <label for="email" class="form__label">Email</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="tel" placeholder="Номер телефона" id="phone" class="form__field">
+                        <label for="phone" class="form__label">Номер телефона</label>
+                    </div>
+                    <div class="project">
+                        <p>Кратко опишите ваш проект</p>
+                        <textarea class="form__field" rows="1"></textarea>
+                    </div>
+                    <div class="service">
+                        <p>Выберите нужную услугу</p>
+                        <div class="items-radio">
+                            <div class="item-radio">
+                                <input type="radio" id="radio1" value="1" name="radio">
+                                <label for="radio1">Landing Page</label>
+                            </div>
+                            <div class="item-radio">
+                                <input type="radio" id="radio2" value="2" name="radio">
+                                <label for="radio2">Website</label>
+                            </div>
+                            <div class="item-radio">
+                                <input type="radio" id="radio3" value="3" name="radio">
+                                <label for="radio3">E-commerce</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accept">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1">Я согласен на обработку персональных данных</label>
+                    </div>
+                    <button class="btn">
+                        Отправить
+                    </button>
+                </div>
+                <div class="social wow animate__fadeInRight">
+                    <p class="titlee">Или свяжитесь с нами любым удобным для способом.</p>
+                    <div class="btns">
+                        <a class="btn">
+                            Whats`app
+                        </a>
+                        <a class="btn">
+                            Telegram
+                        </a>
+                        <a class="btn">
+                            E-mail
+                        </a>
+                        <a class="btn-mail">
+                            hello@fedev.site
+                        </a>
+                    </div>
+                    <div class="text">
+                        <p class="title">— обсудим ваш проект?</p>
+                        <p class="subtitle">Мы на связи 24/7.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./utils/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
